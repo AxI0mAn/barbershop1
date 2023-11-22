@@ -8,10 +8,12 @@ https://www.figma.com/file/60rESUz4tdO19mZPlDANea/Barbershop1?type=design&node-i
 
 
 about:
-1. category 
+1. category:
 - landing page 
-2. adaptiv 320px ... 2560px
-3. technology stack
+2. adaptiv 
+- min viewport 320px 
+- max viewport 2560px
+3. technology stack:
 - Figma 
 - HTML
 - CSS
@@ -27,4 +29,4 @@ about:
 - - optimization image, CSS, JS
 - - Babel, Prettier
 - Git
-
+- - 
