@@ -8,8 +8,7 @@
     "serv": "npx prettier . --write && cross-env NODE_ENV=development webpack serve --open --mode development",
     "dev": "npx prettier . --write && cross-env NODE_ENV=development webpack --mode development",
     "prod": "npx prettier . --write && cross-env NODE_ENV=production webpack --mode production",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "browserslist": "> 0.25%, not dead",
