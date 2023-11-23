@@ -355,7 +355,6 @@ main {
         max-width: 100%;
         height: auto;
 
-        display: block;
       }
     }
   }
@@ -445,9 +444,10 @@ main {
       }
 
       .services_card {
-        width: 30%;
-        min-width: func_respons(360, 300);
+        width: func_respons(360, 300);
+        min-width: 300px;
         height: func_respons(553, 460);
+        min-height: 460px;
 
         flex: 0 0 auto;
         margin-top: 5%;
@@ -459,6 +459,8 @@ main {
         -moz-border-radius: func_rem(29);
         -ms-border-radius: func_rem(29);
         -o-border-radius: func_rem(29);
+
+        border-top: 1px solid $sky_blue;
 
         .services_card_content {
           width: 100%;

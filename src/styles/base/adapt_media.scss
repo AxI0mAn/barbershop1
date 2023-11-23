@@ -2,8 +2,7 @@
 @import './mixins.scss';
 
 //===================================min-width: 1921px
-@media screen and (min-width: 1921px) {
-}
+@media screen and (min-width: 1921px) {}
 
 //===================================max-width: 1440px
 @media screen and (max-width: 1440px) {
@@ -56,7 +55,8 @@
         display: grid; // new
         grid-template-areas:
           'hm hm hm'
-          'hp hp hb'; // new
+          'hb hp hp'; // new
+        column-gap: 10px;
 
         h1 {
           grid-area: hm; // new
@@ -114,6 +114,23 @@
           grid-area: Ob; // new
           justify-self: center; // new
           align-self: center; // new
+        }
+      }
+    }
+  }
+
+  .services {
+
+    .services_content {
+
+      .services_showcase {
+
+        flex-flow: row wrap;
+
+        .services_card {
+          width: func_respons(360, 10);
+          height: func_respons(553, 300);
+          min-height: 300px;
         }
       }
     }
@@ -248,17 +265,17 @@
           li {
             position: relative; //new
 
-            &:hover > ul {
+            &:hover>ul {
               display: initial; //new
               @include transitions;
             }
 
-            &:not(:hover) > ul {
+            &:not(:hover)>ul {
               display: none; //new
               @include transitions;
             }
 
-            &:hover > span {
+            &:hover>span {
               @include transitions; //new
               color: $white;
               text-shadow:
@@ -266,7 +283,7 @@
                 1px 5px 5px $shadow;
             }
 
-            &:active > span {
+            &:active>span {
               @include transitions; //new
               box-shadow: 0px -5px 5px $shadow;
               text-shadow: -3px -2px 3px rgba(70, 70, 70, 0.338);
@@ -443,6 +460,16 @@
       }
     }
   }
+
+
+  .history {
+    .history_content {
+      .history_img {
+        height: auto;
+        width: 60%;
+      }
+    }
+  }
 }
 
 //===================================max-width: 768px
@@ -499,17 +526,17 @@
           li {
             position: relative; //new
 
-            &:hover > ul {
+            &:hover>ul {
               display: initial; //new
               @include transitions;
             }
 
-            &:not(:hover) > ul {
+            &:not(:hover)>ul {
               display: none; //new
               @include transitions;
             }
 
-            &:hover > span {
+            &:hover>span {
               @include transitions; //new
               color: $white;
               text-shadow:
@@ -517,7 +544,7 @@
                 1px 5px 5px $shadow;
             }
 
-            &:active > span {
+            &:active>span {
               @include transitions; //new
               box-shadow: 0px -5px 5px $shadow;
               text-shadow: -3px -2px 3px rgba(70, 70, 70, 0.338);
@@ -613,6 +640,24 @@
       }
     }
   }
+
+  .services {
+
+    .services_content {
+
+      .services_showcase {
+
+        flex-flow: row wrap;
+
+        .services_card {
+          width: func_respons(300, 1);
+          min-width: 240px;
+          height: func_respons(460, 360);
+          min-height: fit-content;
+        }
+      }
+    }
+  }
 }
 
 //===================================max-width: 525px
@@ -676,7 +721,7 @@
       }
 
       .btn {
-        margin: 180px auto 0 auto;
+        margin: 30px auto 0 auto;
       }
     }
   }
