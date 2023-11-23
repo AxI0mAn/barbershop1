@@ -8,6 +8,7 @@ https://www.figma.com/file/60rESUz4tdO19mZPlDANea/Barbershop1?type=design&node-i
 
 
 about:
+
 1. category:
 - landing page 
 2. adaptiv 
