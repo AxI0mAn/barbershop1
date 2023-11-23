@@ -1,27 +1,32 @@
 @import './styles/base.scss';
+
 :root {
   font-size: 16px; //@include font_adapt(16, 12); //
 }
 
 body {
-  background-color: $white;
+  background-color: greenyellow;
   color: $T_color;
   font-family: 'Catamaran_Regular', Arial, Helvetica, sans-serif;
 
   a {
     @include links();
   }
+
   .accent_yellow {
     color: $yellow;
   }
+
   .btn {
     @include button();
   }
+
   .logotype:hover {
     @include transitions;
     filter: drop-shadow(10px 10px 15px $sky_blue);
     -webkit-filter: drop-shadow(10px 10px 15px $sky_blue);
   }
+
   .logotype:active {
     @include transitions;
     filter: drop-shadow(10px 10px 15px $yellow);
@@ -36,6 +41,7 @@ body {
     line-height: func_respons(37.65, 20);
     letter-spacing: func_rem(0.75);
   }
+
   h1 {
     width: 100%;
     font-family: 'Catamaran_Bold';
@@ -44,6 +50,7 @@ body {
     text-transform: capitalize;
     color: $T_h_color;
   }
+
   h2 {
     font-family: 'Catamaran_Bold';
     @include font_adapt(70, 25);
@@ -51,6 +58,7 @@ body {
     text-transform: capitalize;
     color: $T_h_color;
   }
+
   h3 {
     font-family: 'Catamaran_Bold';
     @include font_adapt(45, 18);
@@ -74,6 +82,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
 header {
   width: func_perc(1920, 1532);
   max-width: func_rem(1532);
@@ -99,6 +108,7 @@ header {
     align-items: flex-end;
 
     position: relative;
+
     img {
       width: 50%;
       height: 50%;
@@ -113,6 +123,7 @@ header {
       -ms-transform: rotateZ(10deg);
       -o-transform: rotateZ(10deg);
     }
+
     span {
       font-family: 'Catamaran_Semi_Bold';
       font-size: func_rem(40);
@@ -137,13 +148,17 @@ header {
       margin-bottom: 14px;
 
       align-self: flex-end;
+
       ul {
         height: inherit;
+
         .mini_nav {
           display: none;
         }
+
         li {
           height: inherit;
+
           ul {
             width: 100%;
             height: inherit;
@@ -155,9 +170,11 @@ header {
             :not(:first-child) {
               margin-left: func_respons(20, 7);
             }
+
             li {
               align-self: flex-end;
               height: 5%;
+
               a {
                 width: auto;
                 height: 100%;
@@ -171,11 +188,14 @@ header {
                 -moz-border-radius: func_rem(5);
                 -ms-border-radius: func_rem(5);
                 -o-border-radius: func_rem(5);
+
                 span {
                   align-self: flex-end;
                 }
               }
+
               @include transitions;
+
               &:hover {
                 @include transitions;
                 background-color: $sky_blue;
@@ -186,18 +206,23 @@ header {
         }
       }
     }
+
     menu {
       width: func_rem(416);
       height: 100%;
 
       align-self: flex-end;
+
       ul {
         height: inherit;
+
         .mini_menu {
           display: none;
         }
+
         li {
           height: inherit;
+
           ul {
             width: 100%;
             height: inherit;
@@ -205,11 +230,13 @@ header {
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
+
             li {
               width: fit-content;
               height: 100%;
 
               display: flex;
+
               a {
                 height: inherit;
                 // width: fit-content;
@@ -221,6 +248,7 @@ header {
                 display: flex;
 
                 @include transitions;
+
                 img {
                   width: func_rem(42);
                   height: func_rem(42);
@@ -233,6 +261,7 @@ header {
                   -ms-transform: rotateZ(0deg);
                   -o-transform: rotateZ(0deg);
                 }
+
                 span {
                   width: func_rem(30); // default(20px)
                   height: func_rem(30); // default(20px)
@@ -257,6 +286,7 @@ header {
                 }
               }
             }
+
             :last-child {
               a.btn {
                 width: func_respons(188, 120);
@@ -264,6 +294,7 @@ header {
                 align-self: flex-end;
               }
             }
+
             :not(:last-child) {
               :hover {
                 img {
@@ -272,6 +303,7 @@ header {
                   -webkit-filter: drop-shadow(0px -10px 20px $blue) hue-rotate(270deg);
                 }
               }
+
               :active {
                 img {
                   @include transitions;
@@ -286,6 +318,7 @@ header {
     }
   }
 }
+
 main {
   margin-top: func_rem(50);
 
@@ -293,6 +326,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .hero {
   width: func_perc(1920, 1732);
   // height: func_rem(820);
@@ -306,6 +340,7 @@ main {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-content: center;
+
     .hero_message {
       width: func_rem(590); //default 576
       height: 100%;
@@ -314,6 +349,7 @@ main {
         margin: func_respons(30, 14) 8% func_respons(100, 20) 0%;
       }
     }
+
     .hero_img {
       img {
         max-width: 100%;
@@ -331,14 +367,17 @@ main {
 
   margin-top: func_respons(226, 50);
   margin-left: func_perc(1920, 82);
+
   .history_content {
     height: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+
     .history_img {
       height: 100%;
+
       img {
         max-width: 100%;
         height: auto;
@@ -346,6 +385,7 @@ main {
         display: block;
       }
     }
+
     .history_message {
       width: func_rem(526);
       height: 70%;
@@ -354,13 +394,16 @@ main {
       flex-flow: column nowrap;
       justify-content: space-evenly;
       align-content: center;
+
       h2 {
         width: 100%;
       }
+
       p {
         margin: func_respons(149, 20) 8% func_respons(100, 20) 0%;
       }
     }
+
     .hero_img {
       img {
         max-width: 100%;
@@ -381,11 +424,13 @@ main {
   .services_content {
     width: 100%;
     height: 100%;
+
     h2 {
       width: 40%;
       margin: 0 auto;
       text-align: center;
     }
+
     .services_showcase {
       width: 100%;
 
@@ -398,6 +443,7 @@ main {
       :not(:first-child) {
         margin-left: 1%;
       }
+
       .services_card {
         width: 30%;
         min-width: func_respons(360, 300);
@@ -424,6 +470,7 @@ main {
           align-content: center;
 
           text-align: center;
+
           .service_logo {
             height: func_rem(126);
             width: func_rem(103);
@@ -448,14 +495,17 @@ main {
               @include сentering-xy();
             }
           }
+
           h3 {
             margin-top: 60px;
           }
+
           p {
             margin: auto 5%;
           }
         }
       }
+
       .services_card:hover {
         background-color: $sky_blue;
         box-shadow: 23px 39px 47px 0px $social_bg;
@@ -473,9 +523,11 @@ main {
 
   .gallery_content {
     width: 100%;
+
     h2 {
       text-align: center;
     }
+
     .gallery_img {
       width: 100%;
 
@@ -488,6 +540,7 @@ main {
       justify-content: center;
       align-content: center;
       margin-bottom: func_rem(100);
+
       img {
         align-self: center;
         width: func_respons(435, 100);
@@ -496,6 +549,7 @@ main {
         object-position: 15% 25%;
       }
     }
+
     .btn {
       margin: 0 auto;
     }
@@ -516,6 +570,7 @@ footer {
     flex-flow: column nowrap;
     justify-content: space-between;
     align-content: center;
+
     .logotype {
       width: func_rem(230);
       min-width: fit-content;
@@ -531,6 +586,7 @@ footer {
       align-items: flex-end;
 
       position: relative;
+
       img {
         width: func_rem(112);
         height: func_rem(112);
@@ -545,6 +601,7 @@ footer {
         -ms-transform: rotateZ(10deg);
         -o-transform: rotateZ(10deg);
       }
+
       span {
         font-family: 'Catamaran_Semi_Bold';
         font-size: func_rem(60);
@@ -552,17 +609,20 @@ footer {
         text-transform: lowercase;
       }
     }
+
     p {
       width: func_respons(526, 300);
       margin: func_rem(47) auto;
       text-align: center;
     }
+
     .social {
       width: 60%;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-evenly;
       align-self: center;
+
       a {
         width: func_respons(67, 40);
         height: func_respons(67, 40);
@@ -583,24 +643,29 @@ footer {
           position: absolute;
           @include сentering-xy();
         }
+
         :first-child {
           width: 19px;
           height: 38px;
         }
+
         :nth-child(2) {
           width: 31.692px;
           height: 25.75px;
         }
+
         :last-child {
           width: 28px;
           height: 29px;
         }
       }
+
       a:hover {
         background-color: $sky_blue;
       }
     }
   }
+
   hr {
     margin: 20px auto;
   }
