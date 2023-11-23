@@ -6,16 +6,6 @@ const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
 
-const productionConfig = merge([
-  {
-    output: {
-      // Tweak this to match your GitHub project name
-      publicPath: "/barbershop1/",
-
-    },
-  },
-]);
-
 module.exports = {
   entry: {
     main: path.resolve(__dirname, 'src', 'index.js'),

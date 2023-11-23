@@ -2,7 +2,8 @@
 @import './mixins.scss';
 
 //===================================min-width: 1921px
-@media screen and (min-width: 1921px) {}
+@media screen and (min-width: 1921px) {
+}
 
 //===================================max-width: 1440px
 @media screen and (max-width: 1440px) {
@@ -247,17 +248,17 @@
           li {
             position: relative; //new
 
-            &:hover>ul {
+            &:hover > ul {
               display: initial; //new
               @include transitions;
             }
 
-            &:not(:hover)>ul {
+            &:not(:hover) > ul {
               display: none; //new
               @include transitions;
             }
 
-            &:hover>span {
+            &:hover > span {
               @include transitions; //new
               color: $white;
               text-shadow:
@@ -265,7 +266,7 @@
                 1px 5px 5px $shadow;
             }
 
-            &:active>span {
+            &:active > span {
               @include transitions; //new
               box-shadow: 0px -5px 5px $shadow;
               text-shadow: -3px -2px 3px rgba(70, 70, 70, 0.338);
@@ -498,17 +499,17 @@
           li {
             position: relative; //new
 
-            &:hover>ul {
+            &:hover > ul {
               display: initial; //new
               @include transitions;
             }
 
-            &:not(:hover)>ul {
+            &:not(:hover) > ul {
               display: none; //new
               @include transitions;
             }
 
-            &:hover>span {
+            &:hover > span {
               @include transitions; //new
               color: $white;
               text-shadow:
@@ -516,7 +517,7 @@
                 1px 5px 5px $shadow;
             }
 
-            &:active>span {
+            &:active > span {
               @include transitions; //new
               box-shadow: 0px -5px 5px $shadow;
               text-shadow: -3px -2px 3px rgba(70, 70, 70, 0.338);
@@ -612,8 +613,6 @@
       }
     }
   }
-
-
 }
 
 //===================================max-width: 525px
