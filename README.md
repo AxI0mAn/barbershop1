@@ -1,25 +1,25 @@
 # about:
 
-1. category:
+## category:
 *  landing page 
-2. adaptive layout
+## adaptive layout
 *  min viewport 320px 
 *  max viewport 2560px
-3. technology stack:
-  1. Figma 
-  2. HTML
-  3. CSS
+## technology stack:
+  * ### Figma 
+  * ### HTML
+  * ### CSS
     * SCSS
-      * - grid and flex
-      * - mixins 
-      * - functions
-      * - drop menu
-  4. SVG
-  5.  Map location
-  6. Webpack
-* HtmlWebpackPlugin, FileManagerPlugin
-* optimization image, CSS, JS
-* Babel, Prettier
-  7. Git
-* GitLens
-* gh-pages
+      - grid and flex
+      - mixins 
+      - functions
+      - drop menu
+  * ### SVG
+  * ###  Map location
+  * ### Webpack
+  - HtmlWebpackPlugin, FileManagerPlugin
+  - optimization image, CSS, JS
+  - Babel, Prettier
+  * ###  Git
+- GitLens
+- gh-pages
