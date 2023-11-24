@@ -1,3 +1,4 @@
+@import './mixins.scss';
 $minWidth: 320; // ширинa экрана мобильника
 $maxWidth: 1920; // ширина полотна макета
 // $maxWidthContainer: 1580; // ширина ограничивающего контейнера именно тут - совпадает с $maxWidth
@@ -18,3 +19,6 @@ $social_bg: #d3e5ff;
 $T_color: #153461;
 $T_h_color: #163561;
 $T_nav_color: #163561;
+
+$dec_width: func_respons(433, 50); //func_perc(1920, 433);
+$dec_height: func_respons(736.5, 85);

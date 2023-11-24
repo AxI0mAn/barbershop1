@@ -2,7 +2,11 @@
 @import './mixins.scss';
 
 //===================================min-width: 1921px
-@media screen and (min-width: 1921px) {}
+@media screen and (min-width: 1921px) {
+  .decor {
+    width: calc($maxWidth * 1.25px);
+  }
+}
 
 //===================================max-width: 1440px
 @media screen and (max-width: 1440px) {
@@ -120,11 +124,8 @@
   }
 
   .services {
-
     .services_content {
-
       .services_showcase {
-
         flex-flow: row wrap;
 
         .services_card {
@@ -265,17 +266,17 @@
           li {
             position: relative; //new
 
-            &:hover>ul {
+            &:hover > ul {
               display: initial; //new
               @include transitions;
             }
 
-            &:not(:hover)>ul {
+            &:not(:hover) > ul {
               display: none; //new
               @include transitions;
             }
 
-            &:hover>span {
+            &:hover > span {
               @include transitions; //new
               color: $white;
               text-shadow:
@@ -283,7 +284,7 @@
                 1px 5px 5px $shadow;
             }
 
-            &:active>span {
+            &:active > span {
               @include transitions; //new
               box-shadow: 0px -5px 5px $shadow;
               text-shadow: -3px -2px 3px rgba(70, 70, 70, 0.338);
@@ -461,7 +462,6 @@
     }
   }
 
-
   .history {
     .history_content {
       .history_img {
@@ -526,17 +526,17 @@
           li {
             position: relative; //new
 
-            &:hover>ul {
+            &:hover > ul {
               display: initial; //new
               @include transitions;
             }
 
-            &:not(:hover)>ul {
+            &:not(:hover) > ul {
               display: none; //new
               @include transitions;
             }
 
-            &:hover>span {
+            &:hover > span {
               @include transitions; //new
               color: $white;
               text-shadow:
@@ -544,7 +544,7 @@
                 1px 5px 5px $shadow;
             }
 
-            &:active>span {
+            &:active > span {
               @include transitions; //new
               box-shadow: 0px -5px 5px $shadow;
               text-shadow: -3px -2px 3px rgba(70, 70, 70, 0.338);
@@ -614,6 +614,7 @@
 
                 &:hover {
                   @include transitions;
+                  height: 50px;
                   color: $yellow; //new
                   filter: drop-shadow(10px 10px 15px $sky_blue); //new
                   -webkit-filter: drop-shadow(10px 10px 15px $sky_blue);
@@ -642,11 +643,8 @@
   }
 
   .services {
-
     .services_content {
-
       .services_showcase {
-
         flex-flow: row wrap;
 
         .services_card {
