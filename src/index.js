@@ -24,5 +24,5 @@ const swiper = new Swiper('.swiper', {
   zoom: {
     maxRatio: 3,
     minRatio: 1,
-  }
+  },
 });
