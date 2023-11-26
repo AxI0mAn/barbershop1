@@ -94,7 +94,7 @@ body {
   z-index: -5;
 }
 
-.decor > img {
+.decor>img {
   // default(1920px) width(433px) height(736.5px)
   width: $dec_width;
   height: auto;
@@ -125,8 +125,7 @@ body {
   top: calc($dec_height * (-1.5));
   left: -20vw;
 
-  img:first-child {
-  }
+  img:first-child {}
 
   img:last-child {
     transform: rotateY(180deg);
@@ -162,8 +161,7 @@ body {
   bottom: calc($dec_height * (-0.35));
   left: -7vw;
 
-  img:first-child {
-  }
+  img:first-child {}
 
   img:last-child {
     transform: rotateY(180deg);
@@ -669,8 +667,13 @@ main {
       }
     }
 
-    .btn {
+    .btn.learn_more {
       margin: 0 auto;
+
+      strong {
+        width: fit-content;
+        white-space: nowrap;
+      }
     }
   }
 
@@ -680,7 +683,7 @@ main {
     @include сentering-xy();
     position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 94vh;
     background-image: url(./assets/images/svg/icon_scissors.svg),
       url(./assets/images/svg/icon_electric_razor.svg), linear-gradient(to top, $white, $social_bg);
     background-repeat: repeat-x, repeat-x, no-repeat;
