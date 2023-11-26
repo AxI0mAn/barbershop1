@@ -94,7 +94,7 @@ body {
   z-index: -5;
 }
 
-.decor>img {
+.decor > img {
   // default(1920px) width(433px) height(736.5px)
   width: $dec_width;
   height: auto;
@@ -125,7 +125,8 @@ body {
   top: calc($dec_height * (-1.5));
   left: -20vw;
 
-  img:first-child {}
+  img:first-child {
+  }
 
   img:last-child {
     transform: rotateY(180deg);
@@ -161,7 +162,8 @@ body {
   bottom: calc($dec_height * (-0.35));
   left: -7vw;
 
-  img:first-child {}
+  img:first-child {
+  }
 
   img:last-child {
     transform: rotateY(180deg);
@@ -637,6 +639,7 @@ main {
         align-self: center;
         width: func_respons(435, 100);
         height: func_respons(435, 100);
+        padding: 3px;
         object-fit: cover;
         object-position: 15% 25%;
         -webkit-mask-image: linear-gradient(45deg, #000 40%, rgba(0, 0, 0, 0.2) 50%, #000 65%);
