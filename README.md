@@ -30,12 +30,12 @@
 - ### SVG
 - ### Map location
 - ### Webpack
-
 * HtmlWebpackPlugin, FileManagerPlugin,
 * optimization image, CSS, JS,
 * Babel, Prettier
 * and other packeges
 
+- ### Swiperjs
 - ### Git
 
 * GitLens
